@@ -27,14 +27,15 @@ Rode no bash ou no seu terminal em um diretório de sua preferência:
 ```
 git clone https://github.com/emanuelzaveruka/msEmail.git
 ```
-Ou faça o download e extraia o arquivo no diretório de sua preferência
-####[download do arquivo](https://github.com/emanuelzaveruka/msEmail/archive/refs/heads/main.zip)
+Ou faça o download e extraia o arquivo no diretório de sua preferência [download do arquivo](https://github.com/emanuelzaveruka/msEmail/archive/refs/heads/main.zip)
 
 Abra o projeto em sua IDE e configure para suportar SDK java 17
 Em seguida navegue até /email/src/main/resources abra o arquivo application.properties
 
 No spring.datasource.url sete sua configurações de local host e a porta de seu SQL se você já utiliza o pacote XAMPP não é necessário reconfigurar.
+
 Em spring.datasource.username sete seu usuário de acesso ao banco de dados.
+
 E por último spring.datasource.password sete sua senha de acesso ao banco de dados.
 ```
 spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/ms-email
@@ -42,6 +43,7 @@ spring.datasource.username=root
 spring.datasource.password=
 ```
 Para utilizar o envio de email é necessário um email com autenticação de dois fatores e uma senha de acesso de 16 caracteres gerada pelo google. [Link para gerar senha](https://support.google.com/accounts/answer/185833)
+
 Após gerar sua senha deve retornar ao arquivo application.properties e alterar:
 ```
 spring.mail.username=youremailhere@gmail.com
