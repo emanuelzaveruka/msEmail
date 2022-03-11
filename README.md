@@ -23,6 +23,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ## 🚀 Instalando
 
 Para instalar o **msEmail**, siga estas etapas:
+
 Rode no bash ou no seu terminal em um diretório de sua preferência:
 ```
 git clone https://github.com/emanuelzaveruka/msEmail.git
@@ -30,6 +31,7 @@ git clone https://github.com/emanuelzaveruka/msEmail.git
 Ou faça o download e extraia o arquivo no diretório de sua preferência [download do arquivo](https://github.com/emanuelzaveruka/msEmail/archive/refs/heads/main.zip)
 
 Abra o projeto em sua IDE e configure para suportar SDK java 17
+
 Em seguida navegue até /email/src/main/resources abra o arquivo application.properties
 
 No spring.datasource.url sete sua configurações de local host e a porta de seu SQL se você já utiliza o pacote XAMPP não é necessário reconfigurar.
@@ -56,6 +58,7 @@ Para usar o msEmail, siga estas etapas:
 - Dentro de sua ferramenta de teste de api importe o arquivo **msEmail.postman_collection.json** disponível no diretório /postman.
 
 caso queira configurar manualmente sua requisição no **endpoint**:
+
 método POST:
 ```
 http://localhost:8080/sending-email
